@@ -1,5 +1,1 @@
-import "../styles/globals.css";
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+import "../styles/globals.css";`nimport Script from "next/script";`n`nexport default function App({ Component, pageProps }) {`n  return (`n    <>`n      <Script`n        src="https://www.googletagmanager.com/gtag/js?id=G-1831PY3RM2"`n        strategy="afterInteractive"`n      />`n      <Script id="google-analytics" strategy="afterInteractive">`n        {`` ` ``}`n          window.dataLayer = window.dataLayer || [];`n          function gtag(){dataLayer.push(arguments);}`n          gtag('js', new Date());`n          gtag('config', 'G-1831PY3RM2');`n        {`` ` ``}`n      </Script>`n      <Component {...pageProps} />`n    </>`n  );`n}
